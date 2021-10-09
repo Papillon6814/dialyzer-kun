@@ -2,6 +2,13 @@ defmodule DialyzerKun.Accounts.User do
   use Ecto.Schema
   import Ecto.Changeset
 
+  @type t :: %__MODULE__{
+    age: integer(),
+    name: String.t(),
+    inserted_at: any(),
+    updated_at: any()
+  }
+
   schema "users" do
     field :age, :integer
     field :name, :string

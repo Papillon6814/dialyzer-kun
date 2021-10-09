@@ -51,6 +51,7 @@ defmodule DialyzerKun.Accounts do
       nil
 
   """
+  @spec get_user(integer()) :: User.t() | nil
   def get_user(id), do: Repo.get(User, id)
 
   @doc """
